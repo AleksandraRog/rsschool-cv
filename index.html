@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class = "header">
-        <div class="container"></div>
-    </header>
-    <main class = "main">
-        <div class="container">
-            <section class="section" id="profile">
-                <h1 class="section-title">Aleksandra Ro</h1>
-            </section>
-            <section class="section" id="contacts">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="summary">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="skills">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="experience">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="education">
-                <h2 class="section-title"></h2>
-            </section>
-            <section class="section" id="languages">
-                <h2 class="section-title"></h2>
-            </section>
-        </div>
-    </main>
-    <footer class = "footer">
-        <div class="container"></div>
-    </footer>
+  <header class = "header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class = "main">
+    <div class="container">
+      <section class="section" id="profile">
+        <h1 class="section-title">Aleksandra Ro</h1>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+          <ul>
+            <li>Discord username: ipetuniya7981</li>
+            <li>E-mail: g.aleksandra.ro@gmail.com</li>
+          </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">About me</h2>
+          <p>I am an economist who started learning 1C programming to improve my daily work tasks. To deepen my understanding of programming
+            and learn industry best practices, I started formal training. Android development course expanded my knowledge of object-oriented programming and modern application architecture. I expect that learning JavaScript for front-end development will further deepen my knowledge of modern software engineering.</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <p>Kotlin, Java(basick), Git(GitHub), Android SDK, SQLite, Jetpack (ViewModel, LiveData, Navigation, Room), Retrofit</p>
+      </section>
+      <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">Code example</h2>
+          <p>Credit Card Mask KATA from CODEWARS: task is to write a function maskify, which changes all but the last four characters into '&num;'.</p>
+            <code>
+            fun maskify&lpar;cc&colon; String&rpar;&colon; String &lcub;
+            return cc.mapIndexed&lcub; index, char -&GT; if &lpar;index &LT;= cc.length - 5&rpar; &QUOT;&num;&QUOT; else char &rcub;.joinToString&lpar;&QUOT;&QUOT;&rpar;
+            &rcub;
+            </code>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li>Saint Petersburg State University of Industrial Technologies and Design
+          <ul>
+            <li>Economist</li>
+          </ul>
+          </li>
+          <li>INO СPE «Yandex EdTech»
+          <ul>
+            <li>Android developer</li>
+          </ul>
+          </li>
+          </ul>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
+        <p></p>
+      </section>
+    </div>
+  </main>
+<footer class = "footer">
+  <div class="container"></div>
+</footer>
 </body>
 </html>

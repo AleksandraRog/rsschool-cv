@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,4 +13,22 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+/* .section {
+  
+}
+
+.section-title {
+  
+} */
+
+.nav-list {
+display: flex;  
+flex-direction: row;    
+}
+
+.header {
+ 
+background-color: #bbc6c1;  
 }

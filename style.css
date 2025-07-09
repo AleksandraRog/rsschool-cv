@@ -30,6 +30,8 @@ code {
   background: whitesmoke; 
   border-radius: 12px;
   padding: 12px; 
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 h1 {

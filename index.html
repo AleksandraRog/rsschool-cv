@@ -33,7 +33,7 @@
         <h1 class="section-title">Aleksandra Ro</h1>
       </section>
       <div class="wrap row">
-        <img src="./assets/foto.png" alt="foto" height="204" style="border-radius: 10px;">
+        <img src="./assets/img/foto.png" alt="foto" height="204" style="border-radius: 10px;">
         <section class="section" id="contacts">
           <h2 class="section-title contacts">Contacts</h2>
             <ul class="contacts">
@@ -44,7 +44,7 @@
       </div>
       <section class="section" id="summary">
         <h2 class="section-title">About me</h2>
-          <p>I am an economist who started learning 1C programming to streamline my daily work 
+          <p class="paragraph">I am an economist who started learning 1C programming to streamline my daily work 
             and automate routine tasks. To improve my grasp of programming and learn industry 
             best practices, I began formal training. Android development course expanded my knowledge 
             of object-oriented programming and modern application architecture. I expect that learning 
@@ -54,9 +54,16 @@
       </section>
       <section class="section" id="skills">
         <h2 class="section-title">Skills</h2>
-        <p>Kotlin, Java(basic), Git(GitHub), Android SDK, SQLite, Jetpack 
-          (ViewModel, LiveData, Navigation, Room), Retrofit
-        </p>
+        <ul class="skills row">
+          <li class="skills-item">Kotlin</li>
+          <li class="skills-item">Java(basic)</li>
+          <li class="skills-item">Git(GitHub)</li>
+          <li class="skills-item">Android SDK</li>
+          <li class="skills-item">SQLite</li>
+          <li class="skills-item">Jetpack 
+          (ViewModel, LiveData, Navigation, Room)</li>
+          <li class="finish skills-item" style="content: none;">Retrofit</li>
+        </ul>
       </section>
       <section class="section" id="experience">
       <h2 class="section-title">Experience</h2>
@@ -67,7 +74,7 @@
       </section>
       <section class="section" id="code">
         <h2 class="section-title">Code example</h2>
-          <p><i>Credit Card Mask KATA from CODEWARS</i>: task is to write a function maskify, 
+          <p class="paragraph"><i>Credit Card Mask KATA from CODEWARS</i>: task is to write a function maskify, 
             which changes all but the last four characters into '&num;'.
           </p>
           <code>fun maskify&lpar;cc&colon; String&rpar;&colon; String &lcub;
@@ -95,7 +102,7 @@
 <footer class="dark-background">
   <div class="container footer">
     <p>&COPY; 2025</p>
-    <a href="https://rs.school/courses/javascript-ru"><img src="./icons/rs-school-logo.svg" alt="rsschool logo" width="73" height="26"></a>
+    <a href="https://rs.school/courses/javascript-ru"><img src="./assets/svg/rs-school-logo.svg" alt="rsschool logo" width="73" height="26"></a>
     <a href="https://github.com/AleksandraRog/rsschool-cv" target="_blank" class="text-link"><i class="fab fa-github"></i> GitHub</a>
   </div>
 </footer>

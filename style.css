@@ -1,5 +1,5 @@
 :root {
-  --block-indent: 96px;
+  --block-indent: 0 96px;
   --color: #4b514e;
 }
 
@@ -16,32 +16,28 @@ body {
   color: var(--color)
 }
 
-main {
-  margin-left: var(--block-indent);  
+header, footer  {
+  background-color: #bbc6c1; 
+  color: white;
+  padding: 4px;
 }
 
-footer {
-  padding-right: var(--block-indent);
-  padding-left: var(--block-indent);  
-}
-
-code {
-  display: block; 
-  background: whitesmoke; 
-  border-radius: 12px;
-  padding: 12px; 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   text-transform: uppercase; 
 }
 
-h2 {
+.section-title {
   margin-bottom: 8px; 
 }
 
-p {
-  margin-top: 0; 
+.paragraph {
+  margin: 0 auto; 
 }
 
 .container {
@@ -49,19 +45,28 @@ p {
   margin: 0 auto;
 }
 
+.section {
+  max-width: 800px;
+}
+
+code {
+  display: block; 
+  border-radius: 12px;
+  padding: 12px; 
+  margin-top: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: whitesmoke; 
+}
+
+
 .row {
   display: flex; 
   flex-direction: row; 
 }
 
-.dark-background {
-  background-color: #bbc6c1; 
-  color: white;
-  padding: 4px;
- }
-
-.section {
-  max-width: 800px;
+.text-link, .text-link i {
+  color: var(--color)  
 }
 
 .nav {
@@ -71,18 +76,23 @@ p {
 
 .nav-list {
   display: flex;
+  justify-content: flex-end;
+  margin: var(--block-indent);
   flex-wrap: nowrap;
   min-width: max-content;
-  justify-content: flex-end;
-  margin-right: var(--block-indent);
+  list-style-type: none; 
  }
 
 .nav-item {
   white-space: nowrap;
-  list-style-type: none; 
   border-radius: 0.3em;
+  margin: 1em 0;
   padding: 0.3em;
   transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: hsl(150, 4%, 31%, 0.4);
 }
 
 .nav-link {
@@ -90,17 +100,27 @@ p {
   text-decoration: none;
   }
 
-.nav-item:hover {
-  background-color: hsl(150, 4%, 31%, 0.4);
-}
-
-.text-link,
-.text-link i {
-  color: var(--color)  
-}
-
 .contacts {
   margin-left: 1em;
+}  
+
+.skills {
+  padding-left: 0;
+  list-style-type: none;  
+}
+
+.skills li {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: max-content;
+  padding-right: 0.3em;
+}
+.skills li::after {
+  content: ",";
+}
+
+li.finish::after{
+  content: none;
 }
 
 .footer {
@@ -108,6 +128,7 @@ p {
   align-items: center; 
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: var(--block-indent);
 }
 
 .footer p {

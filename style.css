@@ -1,5 +1,5 @@
 :root {
-  --block-indent: auto 96px;
+  --block-indent: 0 96px;
   --color: #4b514e;
 }
 
@@ -22,17 +22,10 @@ header, footer  {
   padding: 4px;
 }
 
-header, footer  {
-  background-color: #bbc6c1; 
-  color: white;
-  padding: auto 4px;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 h1 {
@@ -47,8 +40,6 @@ h1 {
   margin: 0 auto; 
 }
 
-
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -62,10 +53,12 @@ code {
   display: block; 
   border-radius: 12px;
   padding: 12px; 
+  margin-top: 8px;
   white-space: pre-wrap;
   word-break: break-word;
   background: whitesmoke; 
 }
+
 
 .row {
   display: flex; 
@@ -110,25 +103,6 @@ code {
 .contacts {
   margin-left: 1em;
 }  
-
-.skills {
-  padding-left: 0;
-  list-style-type: none;  
-}
-
-.skills li {
-  display: flex;
-  flex-wrap: nowrap;
-  min-width: max-content;
-  padding-right: 0.3em;
-}
-.skills li::after {
-  content: ",";
-}
-
-li.finish::after{
-  content: none;
-}
 
 .skills {
   padding-left: 0;
